@@ -93,7 +93,13 @@
     id="fsc-api"
     src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.8.5/fastspring-builder.min.js"
     type="text/javascript"
-    data-storefront="zabim.test.onfastspring.com/popup-zabim">
+    data-storefront="zabim.test.onfastspring.com/popup-zabim"
+    data-popup-closed="fsDataPopupClosed">
+    </script>
+    <script>
+        function fsDataPopupClosed(data) {
+            console.log(data);
+        }
     </script>
   </head>
   <body>
